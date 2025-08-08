@@ -91,7 +91,7 @@ def list_movies(
     movies = helpers.get_movies(db, skip=skip, limit=limit, title=title, genre=genre)
     return movies
 
-''' 
+
 # Endpoint pour obtenir une évaluation par utilisateur et film
 @app.get(
     "/ratings/{user_id}/{movie_id}",
@@ -243,4 +243,3 @@ def get_analytics(db: Session = Depends(get_db)):
         link_count=link_count
     )
 
-'''
